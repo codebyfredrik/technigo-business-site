@@ -1,0 +1,538 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Reset margins and paddings on most elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/* Removes discs from ul */
+ul {
+  list-style: none;
+}
+
+/* Forms and buttons inherit typogrophy */
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+input,
+textarea,
+button {
+  border: 1px solid gray;
+}
+
+body {
+  background: #0f50b4;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h5,
+p,
+header,
+a,
+a:visited,
+.btn {
+  color: white;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero {
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(15, 80, 180, 0.5),
+      rgba(15, 80, 180, 1)
+    ),
+    url("https://www.bombardier.com/content/dam/Websites/bombardiercom/Multimedia-Library/BA/Business-Aircraft/Global/Global-5500/Global%205500_DDBA0373_Factsheets2018_Global5500_V9_Layers.jpg/_jcr_content/renditions/original");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn {
+  display: none;
+  margin-top: 14px;
+}
+
+/*** HEADER ***/
+
+header {
+  padding-top: 10px;
+  margin-bottom: 1px;
+  height: 60px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 6px 0px;
+  transition: 0.3s;
+  font-weight: 600;
+  display: none;
+  margin-top: 13px;
+  margin-left: 35px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+header nav a:hover {
+  padding: 6px 0px;
+  border-bottom: 2px solid white;
+}
+
+.logo-item {
+  margin: 5px 20px 0 0;
+  font-size: 30px;
+  transform: rotate(-45deg);
+}
+
+.brand-item {
+  margin: 5px 15px 0 0;
+}
+
+.hero-heading {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left;
+}
+
+.hero-heading h1 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-family: "EB Garamond", serif;
+}
+
+.hero-heading h5 {
+  font-size: 7px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "EB Garamond", serif;
+  display: none;
+}
+
+/*** WELCOME CONTAINER ***/
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 0 40px 0;
+}
+
+.welcome-image {
+  margin-bottom: 10px;
+}
+
+.welcome-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid white;
+  /* filter: grayscale(100%);
+  transition: filter 300ms ease-in; */
+  opacity: 0.7;
+}
+
+.welcome-image img:hover {
+  /* filter: grayscale(0%); */
+  transition: filter 300ms ease-in;
+}
+
+.welcome-text {
+  width: 100%;
+  align-self: center;
+  line-height: 25px;
+}
+
+/*** FOOTER ***/
+
+footer {
+  margin: 30px 0 15px 0;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+footer p {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 11px;
+  letter-spacing: 2spx;
+}
+
+footer nav a {
+  text-decoration: none;
+  padding: 6px 0px;
+  transition: 0.3s;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  margin: 5px 0;
+}
+
+footer nav a:hover {
+  padding: 6px 0px;
+  border-bottom: 2px solid white;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.social-media-icon {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-media-icon:hover {
+  color: white;
+}
+
+/***************** MEDIA QUERIES *****************/
+
+/***** TABLET SIZE *****/
+
+/* The media query is to limit the header style to tablet size only. */
+@media (min-width: 668px) and (max-width: 1024px) {
+  /*** HEADER ***/
+
+  header nav {
+    justify-content: center;
+    padding-top: 5px;
+  }
+
+  header nav :nth-child(1) {
+    order: 4;
+  }
+  header nav :nth-child(2) {
+    order: 1;
+  }
+  header nav :nth-child(3) {
+    order: 1;
+  }
+  header nav :nth-child(4) {
+    order: 1;
+  }
+  header nav :nth-child(5) {
+    order: 5;
+  }
+  header nav :nth-child(6) {
+    order: 6;
+  }
+
+  header nav a {
+    display: inline-block;
+  }
+
+  .brand-item {
+    display: none;
+  }
+
+  .logo-item {
+    margin: 12px 0px 0 35px;
+  }
+}
+
+/* The media query is to limit the welcome container style on tablets. */
+@media (min-width: 668px) and (max-width: 927px) {
+  .welcome-container {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .welcome-text {
+    display: inline-block;
+    width: 60%;
+    padding: 20px;
+    align-self: center;
+  }
+
+  .welcome-image {
+    width: 60%;
+    padding: 20px;
+    margin-bottom: 0px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 668px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  /*** HEADER ***/
+
+  header {
+    height: 80px;
+  }
+
+  .hero-heading {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-heading h1 {
+    /* font-size: 46px; */
+    font-size: 52px;
+  }
+
+  .hero-heading h5 {
+    font-size: 10px;
+    display: block;
+    margin-top: 15px;
+  }
+
+  /*** WELCOME CONTAINER ***/
+
+  /* .welcome-container {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .welcome-text {
+    display: inline-block;
+    flex-basis: 60%;
+    padding: 20px;
+    align-self: center;
+  }
+
+  .welcome-image {
+    flex-basis: 40%;
+    padding: 20px;
+    margin-bottom: 0px;
+  }
+
+  /*** FOOTER ***/
+
+  .social-media-container {
+    justify-content: flex-end;
+  }
+
+  .social-media-icon {
+    margin-left: 40px;
+  }
+
+  footer nav {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  footer nav a {
+    margin-right: 35px;
+  }
+
+  footer p {
+    text-align: left;
+  }
+}
+
+@media (min-width: 928px) {
+  /*** WELCOME CONTAINER ***/
+  .welcome-container {
+    margin-top: 0px;
+    margin-bottom: 70px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .welcome-text {
+    display: inline-block;
+    flex-basis: 60%;
+    /* padding: 20px 50px 20px 30px; */
+    align-self: center;
+  }
+
+  .welcome-image {
+    flex-basis: 40%;
+    /* padding: 20px 30px 20px 50px; */
+    margin-bottom: 0px;
+  }
+}
+
+/***** DESKTOP SIZE *****/
+@media (min-width: 1025px) {
+  .btn {
+    display: inline-block;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 200ms ease-in;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btn:nth-of-type(1) {
+    margin-left: 35px;
+  }
+
+  .btn:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #0f50b4;
+  }
+
+  .btn:hover:nth-of-type(1) {
+    margin-left: 35px;
+  }
+
+  .btn:active {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /*** HEADER ***/
+
+  header nav {
+    justify-content: flex-end;
+  }
+
+  header nav a {
+    display: inline-block;
+  }
+
+  .brand-item {
+    display: inline-block;
+    margin-right: auto;
+  }
+
+  a:last-child {
+    margin-right: 0;
+  }
+
+  .hero-heading {
+    margin-top: 80px;
+    margin-bottom: 90px;
+  }
+
+  .hero-heading h1 {
+    font-size: 60px;
+  }
+
+  .hero-heading h5 {
+    font-size: 14px;
+  }
+
+  /*** FOOTER ***/
+
+  .social-media-container {
+    justify-content: flex-end;
+  }
+
+  .social-media {
+    margin-left: 40px;
+  }
+
+  footer nav {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  footer p {
+    text-align: left;
+  }
+}
