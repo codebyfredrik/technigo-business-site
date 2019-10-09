@@ -423,6 +423,9 @@ footer nav a:hover {
     align-items: center;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.3);
+    /* box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12); */
+    /* box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.4); */
   }
 
   .welcome-text {
