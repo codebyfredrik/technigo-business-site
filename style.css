@@ -1,5 +1,9 @@
 html {
   box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 *,
@@ -28,7 +32,13 @@ hr {
 }
 
 ul {
-  list-style: none;
+  list-style: disc;
+  margin-top: 15px;
+}
+
+li {
+  margin-left: 13px;
+  margin-bottom: 4px;
 }
 
 input,
@@ -64,7 +74,7 @@ a:visited,
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
@@ -137,6 +147,7 @@ header nav a:hover {
   margin: 5px 20px 0 0;
   font-size: 30px;
   transform: rotate(-45deg);
+  color: white;
 }
 
 .brand-item {
@@ -175,7 +186,7 @@ header nav a:hover {
   flex-direction: column;
   justify-content: center;
   margin: 5px 0 30px 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .welcome-image {
@@ -206,16 +217,17 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   margin: 0px 0 30px 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .misc-newsletter {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   margin-bottom: 45px;
 }
 
 .misc-faq {
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  margin-bottom: 30px;
 }
 
 /* FORM */
@@ -225,7 +237,7 @@ header nav a:hover {
   padding: 20px;
   border-radius: 6px;
   /* box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12); */
-  box-shadow: 0 2px 3px 0 rgba(14, 30, 37, 0.3);
+  /* box-shadow: 0 2px 3px 0 rgba(14, 30, 37, 0.3); */
 }
 
 label {
@@ -347,6 +359,92 @@ input:focus {
   margin-bottom: 25px;
 }
 
+/*** ACCORDION ***/
+
+div.button {
+  display: flex;
+  height: 40px;
+  background: white;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px;
+  border-bottom: 1px solid #f2f2f2;
+  transition: opacity 0.2s ease-in;
+  box-shadow: 0 2px 2px 0 rgba(14, 30, 37, 0.12);
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  -ms-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+}
+
+div.button:hover {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.question {
+  font-weight: 900;
+  color: #0f50b4;
+}
+
+.open .question {
+  color: red;
+}
+
+div.accordion-box {
+  max-height: 0;
+  transition: max-height 0.1s ease-out;
+  -webkit-transition: max-height 0.1s ease-out;
+  -moz-transition: max-height 0.1s ease-out;
+  -ms-transition: max-height 0.1s ease-out;
+  -o-transition: max-height 0.1s ease-out;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+i {
+  font-weight: 900;
+  color: #0f50b4;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  margin-left: 15px;
+}
+
+.open i {
+  color: red;
+  transform: rotateZ(180deg);
+  transition: transform 0.2s ease-in;
+  -webkit-transition: transform 0.2s ease-in;
+  -moz-transition: transform 0.2s ease-in;
+  -ms-transition: transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in;
+}
+
+.open {
+  opacity: 0.7;
+}
+
+.open + div.accordion-box {
+  overflow: hidden;
+  padding: 15px;
+  height: auto;
+  max-height: 600px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 14px;
+  border-bottom: 1px solid red;
+  /* border-top: 1px solid red; */
+  transition: max-height 0.25s ease-in;
+  -webkit-transition: max-height 0.25s ease-in;
+  -moz-transition: max-height 0.25s ease-in;
+  -ms-transition: max-height 0.25s ease-in;
+  -o-transition: max-height 0.25s ease-in;
+}
+
 /*** FOOTER ***/
 
 footer {
@@ -450,7 +548,7 @@ footer nav a:hover {
 
 @media (min-width: 668px) {
   h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   h3 {
@@ -620,25 +718,6 @@ footer nav a:hover {
 
   .welcome-image img {
     width: 100%;
-  }
-
-  /*** MISC CONTAINER ***/
-  .misc-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .misc-faq {
-    flex-basis: 50%;
-    margin-left: 20px;
-    align-self: flex-start;
-  }
-
-  .misc-newsletter {
-    flex-basis: 50%;
-    margin-bottom: 0px;
   }
 
   /*** FOOTER ***/
