@@ -8,7 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-/* Reset margins and paddings on most elements */
 body,
 h1,
 h2,
@@ -28,12 +27,10 @@ hr {
   padding: 0;
 }
 
-/* Removes discs from ul */
 ul {
   list-style: none;
 }
 
-/* Forms and buttons inherit typogrophy */
 input,
 textarea,
 select,
@@ -46,7 +43,7 @@ button {
 input,
 textarea,
 button {
-  border: 1px solid gray;
+  border: 0px;
 }
 
 body {
@@ -69,7 +66,6 @@ a:visited,
 h1 {
   font-size: 30px;
   margin-bottom: 15px;
-  /* line-height: 20px; */
 }
 
 h2 {
@@ -179,11 +175,11 @@ header nav a:hover {
   flex-direction: column;
   justify-content: center;
   margin: 5px 0 30px 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .welcome-image {
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
 }
 
 .welcome-image img {
@@ -191,45 +187,40 @@ header nav a:hover {
   height: auto;
   border-radius: 6px;
   border: 1px solid white;
-  /* filter: grayscale(100%);
-  transition: filter 300ms ease-in; */
+  filter: grayscale(100%);
+  transition: filter 300ms ease-in;
   opacity: 0.7;
 }
 
 .welcome-image img:hover {
-  /* filter: grayscale(0%); */
+  filter: grayscale(0%);
   transition: filter 300ms ease-in;
 }
 
 .welcome-text {
-  width: 100%;
-  align-self: center;
   line-height: 23px;
-  /* margin-top: 30px; */
 }
 
 /*** NEWSLETTER SIGNUP AND FAQ ***/
 .misc-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0px 0 40px 0;
+  margin: 0px 0 30px 0;
+  border: 1px solid red;
 }
 
 .misc-newsletter {
-  width: 100%;
+  border: 1px solid yellow;
   margin-bottom: 45px;
 }
 
 .misc-faq {
-  width: 100%;
+  border: 1px solid green;
 }
 
 /* FORM */
 
 .form-container {
-  width: 100%;
-  height: auto;
   background: rgba(255, 255, 255, 0.2);
   padding: 20px;
   border-radius: 6px;
@@ -455,34 +446,7 @@ footer nav a:hover {
 }
 
 /* The media query is to limit the welcome container style on tablets. */
-@media (min-width: 668px) and (max-width: 927px) {
-  .welcome-container {
-    /* margin-top: 0px; */
-    /* margin-bottom: 50px; */
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .welcome-text {
-    display: inline-block;
-    /* width: 50%; */
-    flex-basis: 56%;
-    padding-right: 20px;
-    /* align-self: center; */
-  }
-
-  .welcome-image {
-    /* width: 50%; */
-    flex-basis: 42%;
-    /* padding-left: 20px; */
-    /* margin-bottom: 0px; */
-  }
-
-  p {
-    /* text-align: cennter; */
-  }
-}
+/* @media (min-width: 668px) and (max-width: 927px) { */
 
 @media (min-width: 668px) {
   h1 {
@@ -511,7 +475,6 @@ footer nav a:hover {
   }
 
   .hero-heading h1 {
-    /* font-size: 46px; */
     font-size: 52px;
   }
 
@@ -522,34 +485,24 @@ footer nav a:hover {
   }
 
   /*** WELCOME CONTAINER ***/
-
-  /* .welcome-container {
-    margin-top: 40px;
-    margin-bottom: 100px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  } */
-
   .welcome-container {
-    /* border: 1px solid red; */
+    margin-bottom: 35px;
   }
 
   .welcome-text {
     display: inline-block;
-    /* flex-basis: 40%; */
-    align-self: flex-start;
-    /* padding-right: 20px; */
-    /* border: 1px solid yellow; */
-    /* padding: 20px; */
-    /* align-self: center; */
+    flex-basis: 56%;
+    padding-right: 20px;
   }
 
   .welcome-image {
-    /* flex-basis: 40%; */
-    /* padding: 20px; */
-    /* margin-bottom: 0px; */
-    /* border: 1px solid green; */
+    flex-basis: 42%;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .welcome-image img {
+    width: 50%;
   }
 
   /*** FOOTER ***/
@@ -573,38 +526,6 @@ footer nav a:hover {
 
   footer p {
     text-align: left;
-  }
-}
-
-@media (min-width: 928px) {
-  /*** WELCOME CONTAINER ***/
-  .welcome-container {
-    /* margin-top: 0px; */
-    /* margin-bottom: 70px; */
-    /* padding: 10px; */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* border-radius: 10px; */
-    /* background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.3); */
-  }
-
-  .welcome-text {
-    display: inline-block;
-    flex-basis: 60%;
-    /* padding: 20px 50px 20px 30px; */
-    /* align-self: flex-start; */
-  }
-
-  .welcome-image {
-    flex-basis: 40%;
-    /* padding: 20px 30px 20px 50px; */
-    /* margin-bottom: 0px; */
-  }
-
-  /*** MISC CONTAINER ***/
-  .misc-container {
   }
 }
 
@@ -686,13 +607,38 @@ footer nav a:hover {
     font-size: 14px;
   }
 
-  /*** NEWSLETTER SIGNUP AND FAQ ***/
-  .newsletter-faq-container {
+  /*** WELCOME CONTAINER ***/
+  .welcome-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .welcome-image {
+    padding-left: 20px;
+  }
+
+  .welcome-image img {
+    width: 100%;
+  }
+
+  /*** MISC CONTAINER ***/
+  .misc-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* margin: 5px 0 40px 0; */
+  }
+
+  .misc-faq {
+    flex-basis: 50%;
+    margin-left: 20px;
+    align-self: flex-start;
+  }
+
+  .misc-newsletter {
+    flex-basis: 50%;
+    margin-bottom: 0px;
   }
 
   /*** FOOTER ***/
