@@ -51,7 +51,7 @@ button {
 
 body {
   background: #0f50b4;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -68,6 +68,8 @@ a:visited,
 
 h1 {
   font-size: 30px;
+  margin-bottom: 15px;
+  /* line-height: 20px; */
 }
 
 h2 {
@@ -89,14 +91,16 @@ p {
 }
 
 .hero {
-  width: 100%;
+  width: auto;
+  height: 100vh;
   background-image: linear-gradient(
       rgba(15, 80, 180, 0.5),
       rgba(15, 80, 180, 1)
     ),
-    url("https://www.bombardier.com/content/dam/Websites/bombardiercom/Multimedia-Library/BA/Business-Aircraft/Global/Global-5500/Global%205500_DDBA0373_Factsheets2018_Global5500_V9_Layers.jpg/_jcr_content/renditions/original");
+    url('https://www.bombardier.com/content/dam/Websites/bombardiercom/Multimedia-Library/BA/Business-Aircraft/Global/Global-5500/Global%205500_DDBA0373_Factsheets2018_Global5500_V9_Layers.jpg/_jcr_content/renditions/original');
   background-repeat: no-repeat;
   background-size: cover;
+  /* object-fit: contain; */
 }
 
 .btn {
@@ -157,14 +161,14 @@ header nav a:hover {
   font-weight: 100;
   margin-bottom: 10px;
   letter-spacing: 2px;
-  font-family: "EB Garamond", serif;
+  font-family: 'EB Garamond', serif;
 }
 
 .hero-heading h5 {
   font-size: 7px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: "EB Garamond", serif;
+  font-family: 'EB Garamond', serif;
   display: none;
 }
 
@@ -174,11 +178,12 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5px 0 40px 0;
+  margin: 5px 0 30px 0;
+  /* border: 1px solid red; */
 }
 
 .welcome-image {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .welcome-image img {
@@ -199,7 +204,156 @@ header nav a:hover {
 .welcome-text {
   width: 100%;
   align-self: center;
-  line-height: 25px;
+  line-height: 23px;
+  /* margin-top: 30px; */
+}
+
+/*** NEWSLETTER SIGNUP AND FAQ ***/
+.misc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 0 40px 0;
+}
+
+.misc-newsletter {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.misc-faq {
+  width: 100%;
+}
+
+/* FORM */
+
+.form-container {
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 6px;
+  /* box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12); */
+  box-shadow: 0 2px 3px 0 rgba(14, 30, 37, 0.3);
+}
+
+label {
+  display: inline-block;
+  color: white;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='email'] {
+  display: block;
+  color: black;
+  font-weight: 700;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease-in;
+}
+
+input[type='text']::placeholder,
+input[type='email']::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+
+input[type='text']::-webkit-input-placeholder,
+input[type='email']::-webkit-input-placeholder {
+  /* Edge */
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+
+input[type='text']:-ms-input-placeholder,
+input[type='email']:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+
+input[type='text']:not(:placeholder-shown),
+input[type='email']:not(:placeholder-shown) {
+  margin-bottom: 25px;
+  border-color: red;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+}
+
+input[type='text']:valid,
+input[type='email']:valid {
+  margin-bottom: 25px;
+  border-color: green;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+}
+
+input input:last-of-type {
+  margin-bottom: 30px;
+}
+
+input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+  margin: 2px 10px 5px 0;
+  align-self: flex-start;
+}
+
+input[type='submit'] {
+  margin-top: 30px;
+  width: 40%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  border-radius: 15px;
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.2s ease-in;
+  font-weight: 700;
+}
+
+input[type='submit']:hover {
+  margin-top: 30px;
+  width: 40%;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid white;
+  color: #0f50b4;
+  font-weight: 700;
+}
+
+/* input[type='submit']:active {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15spx;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+} */
+
+input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.periodicity {
+  margin-bottom: 25px;
 }
 
 /*** FOOTER ***/
@@ -211,14 +365,14 @@ footer {
 footer nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 10px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 footer p {
-  text-align: center;
+  /* text-align: ; */
   padding: 15px 0;
   font-size: 11px;
   letter-spacing: 2spx;
@@ -303,28 +457,30 @@ footer nav a:hover {
 /* The media query is to limit the welcome container style on tablets. */
 @media (min-width: 668px) and (max-width: 927px) {
   .welcome-container {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    flex-direction: column;
-    justify-content: center;
+    /* margin-top: 0px; */
+    /* margin-bottom: 50px; */
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 
   .welcome-text {
     display: inline-block;
-    width: 60%;
-    padding: 20px;
-    align-self: center;
+    /* width: 50%; */
+    flex-basis: 56%;
+    padding-right: 20px;
+    /* align-self: center; */
   }
 
   .welcome-image {
-    width: 60%;
-    padding: 20px;
-    margin-bottom: 0px;
+    /* width: 50%; */
+    flex-basis: 42%;
+    /* padding-left: 20px; */
+    /* margin-bottom: 0px; */
   }
 
   p {
-    text-align: center;
+    /* text-align: cennter; */
   }
 }
 
@@ -375,17 +531,25 @@ footer nav a:hover {
     align-items: center;
   } */
 
+  .welcome-container {
+    /* border: 1px solid red; */
+  }
+
   .welcome-text {
     display: inline-block;
-    flex-basis: 60%;
-    padding: 20px;
-    align-self: center;
+    /* flex-basis: 40%; */
+    align-self: flex-start;
+    /* padding-right: 20px; */
+    /* border: 1px solid yellow; */
+    /* padding: 20px; */
+    /* align-self: center; */
   }
 
   .welcome-image {
-    flex-basis: 40%;
-    padding: 20px;
-    margin-bottom: 0px;
+    /* flex-basis: 40%; */
+    /* padding: 20px; */
+    /* margin-bottom: 0px; */
+    /* border: 1px solid green; */
   }
 
   /*** FOOTER ***/
@@ -415,30 +579,32 @@ footer nav a:hover {
 @media (min-width: 928px) {
   /*** WELCOME CONTAINER ***/
   .welcome-container {
-    margin-top: 0px;
-    margin-bottom: 70px;
-    padding: 10px;
+    /* margin-top: 0px; */
+    /* margin-bottom: 70px; */
+    /* padding: 10px; */
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.3);
-    /* box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12); */
-    /* box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.4); */
+    /* border-radius: 10px; */
+    /* background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.3); */
   }
 
   .welcome-text {
     display: inline-block;
     flex-basis: 60%;
     /* padding: 20px 50px 20px 30px; */
-    align-self: center;
+    /* align-self: flex-start; */
   }
 
   .welcome-image {
     flex-basis: 40%;
     /* padding: 20px 30px 20px 50px; */
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
+  }
+
+  /*** MISC CONTAINER ***/
+  .misc-container {
   }
 }
 
@@ -518,6 +684,15 @@ footer nav a:hover {
 
   .hero-heading h5 {
     font-size: 14px;
+  }
+
+  /*** NEWSLETTER SIGNUP AND FAQ ***/
+  .newsletter-faq-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 5px 0 40px 0; */
   }
 
   /*** FOOTER ***/
