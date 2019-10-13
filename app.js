@@ -13,19 +13,9 @@ elements.forEach(el => {
       });
       el.classList.toggle('open');
     } else {
-      // The same element is clicked as previous time. Just toggle.
+      // The same element is clicked as previous time. Just toggle it.
       el.classList.toggle('open');
     }
-
-    // let open = el.classList.contains('open');
-    // let icon = el.querySelectorAll('.fas');
-
-    // Template updates
-    // if (open) {
-    //   icon.innerHTML = `<i class="fas fa-arrow-down"></i>`;
-    // } else {
-    //   icon.innerHTML = `<i class="fas fa-arrow-up"></i>`;
-    // }
 
     previousElement = currentElement;
   });
