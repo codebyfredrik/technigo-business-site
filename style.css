@@ -585,24 +585,32 @@ footer nav a:hover {
 
   /*** WELCOME CONTAINER ***/
   .welcome-container {
-    margin-bottom: 35px;
+    /* border: 1px solid red; */
+    margin: 60px 0 25px 0;
   }
 
   .welcome-text {
     display: inline-block;
-    flex-basis: 56%;
-    padding-right: 20px;
+    flex-basis: 58%;
+    padding: 35px 20px 0 0;
+    /* border: 1px solid green; */
+    order: 2;
   }
 
   .welcome-image {
     flex-basis: 42%;
-    margin-top: 25px;
+    /* margin-top: 0px; */
+    margin-bottom: 30px;
     text-align: center;
+    order: 1;
   }
 
   .welcome-image img {
     width: 50%;
   }
+  /* 
+  .box :nth-child(1) { order: 2; }
+  .box :nth-child(2) { order: 3; } */
 
   /*** FOOTER ***/
 
