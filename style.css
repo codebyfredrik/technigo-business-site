@@ -186,7 +186,6 @@ header nav a:hover {
   flex-direction: column;
   justify-content: center;
   margin: 5px 0 30px 0;
-  /* border: 1px solid red; */
 }
 
 .welcome-image {
@@ -212,31 +211,30 @@ header nav a:hover {
   line-height: 23px;
 }
 
+.welcome-text p:nth-of-type(1) {
+  margin-top: 0;
+}
+
 /*** NEWSLETTER SIGNUP AND FAQ ***/
 .misc-container {
   display: flex;
   flex-direction: column;
   margin: 0px 0 30px 0;
-  /* border: 1px solid red; */
 }
 
 .misc-newsletter {
-  /* border: 1px solid yellow; */
   margin-bottom: 45px;
 }
 
 .misc-faq {
-  /* border: 1px solid green; */
   margin-bottom: 30px;
 }
-
-/* FORM */
 
 .form-container {
   background: rgba(255, 255, 255, 0.2);
   padding: 20px;
   border-radius: 6px;
-  /* box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12); */
+  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
   /* box-shadow: 0 2px 3px 0 rgba(14, 30, 37, 0.3); */
 }
 
@@ -461,10 +459,8 @@ footer nav {
 }
 
 footer p {
-  /* text-align: ; */
-  padding: 15px 0;
   font-size: 11px;
-  letter-spacing: 2spx;
+  letter-spacing: 2px;
 }
 
 footer nav a {
@@ -544,9 +540,7 @@ footer nav a:hover {
   }
 }
 
-/* The media query is to limit the welcome container style on tablets. */
-/* @media (min-width: 668px) and (max-width: 927px) { */
-
+/********** TABLET SIZE **********/
 @media (min-width: 668px) {
   h1 {
     font-size: 30px;
@@ -585,21 +579,18 @@ footer nav a:hover {
 
   /*** WELCOME CONTAINER ***/
   .welcome-container {
-    /* border: 1px solid red; */
-    margin: 60px 0 25px 0;
+    margin: 70px 0 25px 0;
   }
 
   .welcome-text {
     display: inline-block;
     flex-basis: 58%;
     padding: 35px 20px 0 0;
-    /* border: 1px solid green; */
     order: 2;
   }
 
   .welcome-image {
     flex-basis: 42%;
-    /* margin-top: 0px; */
     margin-bottom: 30px;
     text-align: center;
     order: 1;
@@ -608,9 +599,6 @@ footer nav a:hover {
   .welcome-image img {
     width: 50%;
   }
-  /* 
-  .box :nth-child(1) { order: 2; }
-  .box :nth-child(2) { order: 3; } */
 
   /*** FOOTER ***/
 
@@ -630,13 +618,9 @@ footer nav a:hover {
   footer nav a {
     margin-right: 35px;
   }
-
-  footer p {
-    text-align: left;
-  }
 }
 
-/***** DESKTOP SIZE *****/
+/********** DESKTOP SIZE **********/
 @media (min-width: 1025px) {
   .btn {
     display: inline-block;
@@ -719,44 +703,21 @@ footer nav a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
     margin: 40px 0 55px 0;
   }
 
   .welcome-image {
     padding-left: 20px;
-    order: 2;
-    /* border: 1px solid green; */
     margin-bottom: 0px;
-    /* text-align: center; */
+    order: 2;
   }
 
   .welcome-text {
     padding: 0px 20px 0 0;
     order: 1;
-    /* border: 1px solid yellow; */
   }
 
   .welcome-image img {
     width: 100%;
-  }
-
-  /*** FOOTER ***/
-
-  .social-media-container {
-    justify-content: flex-end;
-  }
-
-  .social-media {
-    margin-left: 40px;
-  }
-
-  footer nav {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  footer p {
-    text-align: left;
   }
 }
