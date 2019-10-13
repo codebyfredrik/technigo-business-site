@@ -17,8 +17,8 @@ elements.forEach(el => {
       el.classList.toggle('open');
     }
 
-    let open = el.classList.contains('open');
-    let icon = el.querySelectorAll('.fas');
+    // let open = el.classList.contains('open');
+    // let icon = el.querySelectorAll('.fas');
 
     // Template updates
     // if (open) {

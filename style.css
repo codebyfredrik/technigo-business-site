@@ -59,6 +59,7 @@ button {
 body {
   background: #0f50b4;
   font-family: 'Roboto', sans-serif;
+  padding-bottom: 5px;
 }
 
 h1,
@@ -452,7 +453,7 @@ footer {
 footer nav {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 10px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -461,6 +462,7 @@ footer nav {
 footer p {
   font-size: 11px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 footer nav a {
