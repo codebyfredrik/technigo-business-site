@@ -59,7 +59,6 @@ button {
 body {
   background: #0f50b4;
   font-family: 'Roboto', sans-serif;
-  padding-bottom: 5px;
 }
 
 h1,
@@ -447,6 +446,7 @@ i {
 /*** FOOTER ***/
 
 footer {
+  border: 1px solid yellow;
   margin: 30px 0 15px 0;
 }
 
