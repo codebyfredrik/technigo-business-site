@@ -435,7 +435,6 @@ i {
   color: white;
   font-size: 14px;
   border-bottom: 1px solid red;
-  /* border-top: 1px solid red; */
   transition: max-height 0.25s ease-in;
   -webkit-transition: max-height 0.25s ease-in;
   -moz-transition: max-height 0.25s ease-in;
@@ -446,7 +445,7 @@ i {
 /*** FOOTER ***/
 
 footer {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   margin: 30px 0 15px 0;
 }
 
