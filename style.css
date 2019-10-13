@@ -130,7 +130,7 @@ header nav {
 header nav a {
   text-decoration: none;
   padding: 6px 0px;
-  transition: 0.3s;
+  transition: all 0.3s linear;
   font-weight: 600;
   display: none;
   margin-top: 13px;
@@ -160,7 +160,6 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: left;
 }
 
 .hero-heading h1 {
@@ -370,10 +369,6 @@ div.button {
   border-bottom: 1px solid #f2f2f2;
   transition: opacity 0.2s ease-in;
   box-shadow: 0 2px 2px 0 rgba(14, 30, 37, 0.12);
-  -webkit-transition: opacity 0.2s ease-in;
-  -moz-transition: opacity 0.2s ease-in;
-  -ms-transition: opacity 0.2s ease-in;
-  -o-transition: opacity 0.2s ease-in;
 }
 
 div.button:hover {
@@ -392,10 +387,6 @@ div.button:hover {
 div.accordion-box {
   max-height: 0;
   transition: max-height 0.1s ease-out;
-  -webkit-transition: max-height 0.1s ease-out;
-  -moz-transition: max-height 0.1s ease-out;
-  -ms-transition: max-height 0.1s ease-out;
-  -o-transition: max-height 0.1s ease-out;
   overflow: hidden;
   color: rgba(255, 255, 255, 0);
   background: rgba(255, 255, 255, 0.3);
@@ -405,10 +396,6 @@ i {
   font-weight: 900;
   color: #0f50b4;
   transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
   margin-left: 15px;
 }
 
@@ -416,10 +403,6 @@ i {
   color: red;
   transform: rotateZ(180deg);
   transition: transform 0.2s ease-in;
-  -webkit-transition: transform 0.2s ease-in;
-  -moz-transition: transform 0.2s ease-in;
-  -ms-transition: transform 0.2s ease-in;
-  -o-transition: transform 0.2s ease-in;
 }
 
 .open {
@@ -436,10 +419,6 @@ i {
   font-size: 14px;
   border-bottom: 1px solid red;
   transition: max-height 0.25s ease-in;
-  -webkit-transition: max-height 0.25s ease-in;
-  -moz-transition: max-height 0.25s ease-in;
-  -ms-transition: max-height 0.25s ease-in;
-  -o-transition: max-height 0.25s ease-in;
 }
 
 /*** FOOTER ***/
@@ -564,7 +543,7 @@ footer nav a:hover {
 
   .hero-heading {
     margin-top: 50px;
-    margin-bottom: 12 0px;
+    margin-bottom: 12px;
     flex-direction: column;
     align-items: center;
   }
@@ -619,6 +598,10 @@ footer nav a:hover {
 
   footer nav a {
     margin-right: 35px;
+  }
+
+  footer p {
+    text-align: left;
   }
 }
 
