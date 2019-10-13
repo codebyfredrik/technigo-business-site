@@ -445,9 +445,9 @@ i {
 /*** FOOTER ***/
 
 footer {
-  border: 1px solid yellow;
+  border: 1px solid rgba(255, 255, 255, 0); /* Invisible border to prevent margin-bottom from collappsing on iPhone/iPad. */
   display: block;
-  margin: 30px 0 30px 0;
+  margin: 30px 0 0px 0;
 }
 
 footer nav {
