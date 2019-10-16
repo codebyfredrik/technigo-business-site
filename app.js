@@ -16,7 +16,6 @@ elements.forEach(el => {
       // The same element is clicked as previous time. Just toggle it.
       el.classList.toggle('open');
     }
-
     previousElement = currentElement;
   });
 });
