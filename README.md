@@ -1,23 +1,25 @@
-# Project 3 - Build a business site (Week 3)
+# Project 3 - Business site (Week 3)
 
-### Summary
+### 1. What is this?
 
 This week´s project (@ Technigo Boot Camp 2019) was to create a business site. I chose to create a fictitious business site for a private jet charter company called Global Aviation. The site contains a header with a name of the site, a logo, a navbar, a form and an accordion. All elements on the site are designed to be responsive to create a good experience for the user on both mobile, tablet and desktop.
 
-URL to live site: https://musing-sammet-46e920.netlify.com/
+### 2. What did I do?
 
-### Learning objectives
+[TEXT]
 
-- How to use image or video in the header for responsive webpages.
-- How to use HTML forms and simple requests
-- How to modify the DOM using Javascript
-
-### Technologies used in this project
+### 3. Technologies used
 
 - HTML
 - CSS
 - Javascript
 
-### Copyright
+### 4. Learning objectives
 
-&copy; Fredrik Tibbling 2019
+- How to use image or video in the header for responsive webpages
+- How to use HTML forms and simple requests
+- How to modify the DOM using Javascript
+
+### 5. Where can you see it in action?
+
+URL to live site: https://musing-sammet-46e920.netlify.com/
