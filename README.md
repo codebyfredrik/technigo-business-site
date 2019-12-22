@@ -1,12 +1,12 @@
 # Project 3 - Business site
 
-### What is this?
+### Summary
 
 A business site created for a fictitious private jet charter company.
 
-### What did I do?
+### Implementation details
 
-This week´s project (@ Technigo Boot Camp 2019) was to create a business site. I chose to create a fictitious business site for a private jet charter company called Global Aviation. The site contains a header with a name of the site, a logo, a navbar, a form and an accordion. All elements on the site are designed to be responsive to create a good experience for the user on both mobile, tablet and desktop.
+The site contains a header section with a logo and navbar and a body section with a form and an accordion. All elements on the site are designed to be responsive to create a good experience for the user on both mobile, tablet and desktop.
 
 ### Technologies used
 
