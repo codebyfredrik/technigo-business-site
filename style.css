@@ -106,7 +106,6 @@ p {
     url('https://www.bombardier.com/content/dam/Websites/bombardiercom/Multimedia-Library/BA/Business-Aircraft/Global/Global-5500/Global%205500_DDBA0373_Factsheets2018_Global5500_V9_Layers.jpg/_jcr_content/renditions/original');
   background-repeat: no-repeat;
   background-size: cover;
-  /* object-fit: contain; */
 }
 
 .btn {
@@ -235,7 +234,6 @@ header nav a:hover {
   padding: 20px;
   border-radius: 6px;
   box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
-  /* box-shadow: 0 2px 3px 0 rgba(14, 30, 37, 0.3); */
 }
 
 label {
@@ -328,17 +326,6 @@ input[type='submit']:hover {
   color: #0f50b4;
   font-weight: 700;
 }
-
-/* input[type='submit']:active {
-  margin-top: 30px;
-  width: 100%;
-  padding: 10px;
-  border-radius: 15spx;
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid white;
-  color: white;
-  font-weight: 700;
-} */
 
 input:focus {
   outline: none;
