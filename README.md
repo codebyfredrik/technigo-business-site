@@ -1,4 +1,4 @@
-# Project 3 - Business site
+# Business site
 
 ### Summary
 
@@ -13,12 +13,6 @@ The site contains a header section with a logo and navbar and a body section wit
 - Javascript
 - CSS
 - HTML
-
-### Learning objectives
-
-- How to use image or video in the header for responsive webpages
-- How to use HTML forms and simple requests
-- How to modify the DOM using Javascript
 
 ### Where can you see the site in action?
 
