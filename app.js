@@ -7,13 +7,13 @@ elements.forEach(el => {
     let currentElement = uniqueID[0].innerHTML;
 
     if (currentElement != previousElement) {
-      // Another element is clicked than previous time
+      // If another element is clicked than previous time
       elements.forEach(el => {
         el.classList.remove('open');
       });
       el.classList.toggle('open');
     } else {
-      // The same element is clicked as previous time. Just toggle it.
+      // If the same element is clicked as previous time. Just toggle it.
       el.classList.toggle('open');
     }
     previousElement = currentElement;
